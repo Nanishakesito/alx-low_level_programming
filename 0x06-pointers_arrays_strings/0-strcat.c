@@ -1,31 +1,14 @@
 #include "main.h"
+
 /**
- * *_strcat - function commute srtings
- * @dest: param pointer to a char
- * @src: param pointer to a char
- * Return: return value of dest
+ * _isupper - checks if the character is uppercase
+ * @c:  is the int that will use for the argument of the function
+ * Return: 1 if uppercase character 0 if not
  */
-
-char *_strcat(char *dest, char *src)
+int _isupper(int c)
 {
-  int i;
-  int j;
-
-  i = 0;
-  j = 0;
-
-  while (dest[i] != '\0')
-  {
-    i++;
-  }
-
-  while (src[j] != '\0')
-  {
-    dest[i] = src[j];
-    j++;
-    i++;
-  }
-
-  dest[i] = '\0';
-  return (dest);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
