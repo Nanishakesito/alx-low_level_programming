@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "_putchar.h"
 
 /**
  * main - prints source file name
@@ -11,13 +10,7 @@ int main(void)
 
 	const char *c = __FILE__;
 
-	while (*c)
-	{
-
-		_putchar(*c);
-		c++;
-	}
-	_putchar('\n');
+	fprintf(stdout, "%s\n", c);
 	return (0);
 }
 
